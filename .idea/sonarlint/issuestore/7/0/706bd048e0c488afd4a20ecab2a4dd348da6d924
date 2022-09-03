@@ -1,0 +1,8 @@
+
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ó‹¥•ùÿÿÿÿ8æ‰¼ê¯0
+
+java:S14883"_Immediately return this expression instead of assigning it to the temporary variable "encoded".(ğ®ëôüÿÿÿÿ8é‰¼ê¯0
+m
+java:S2259+"KA "NullPointerException" could be thrown; "messageDigest" is nullable here.(•‡±ªıÿÿÿÿ8›Â¼ê¯0
+W
+java:S1118":Add a private constructor to hide the implicit public one.(®»–ü8³Š¼ê¯0
