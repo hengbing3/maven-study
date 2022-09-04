@@ -41,7 +41,6 @@ public class TransactionFilter implements Filter {
         String servletPath = request.getServletPath();
         if (servletPath.contains(".")) {
             String textName = servletPath.substring(servletPath.lastIndexOf("."));
-
             if (staticResourceExtNameSet.contains(textName)) {
                 // 如果检测到当前请求确实是静态资源，则直接放行，不做事务操作
                 filterChain.doFilter(servletRequest,servletResponse);
