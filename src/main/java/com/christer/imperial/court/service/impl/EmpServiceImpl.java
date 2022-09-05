@@ -16,7 +16,7 @@ import com.christer.imperial.court.util.MD5Util;
  */
 public class EmpServiceImpl implements EmpService {
 
-    private EmpDao empDao = new EmpDaoImpl();
+    private final EmpDao empDao = new EmpDaoImpl();
 
     @Override
     public Emp getEmpByLoginAccount(String loginAccount, String loginPassword) {
@@ -28,7 +28,7 @@ public class EmpServiceImpl implements EmpService {
         // ①不为null：返回 Emp
         if (emp != null) {
             return emp;
-            // ②为null：抛出登录失败异常
+        // ②为null：抛出登录失败异常
         } else {
             throw new LoginFailedException(ImperialCourtConst.LOGIN_FAILED_MESSAGE);
         }

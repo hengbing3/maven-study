@@ -36,6 +36,15 @@
         <url-pattern>/auth</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>WorkServlet</servlet-name>
+        <servlet-class>com.christer.imperial.court.servlet.module.WorkServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WorkServlet</servlet-name>
+        <url-pattern>/work</url-pattern>
+    </servlet-mapping>
+
     <filter>
         <filter-name>txFilter</filter-name>
         <filter-class>com.christer.imperial.court.filter.TransactionFilter</filter-class>

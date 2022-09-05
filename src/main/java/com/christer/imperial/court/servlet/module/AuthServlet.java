@@ -39,8 +39,13 @@ public class AuthServlet extends ModelBaseServlet {
             //4、将查询到的 Emp 对象存入 Session 域
             session.setAttribute(ImperialCourtConst.LOGIN_EMP_ATTR_NAME,emp);
             //5、前往指定视图页面
-            String templateName = "temp";
-            processTemplate(templateName,request,response);
+            // 前往临时页面
+            // String templateName = "temp";
+            // processTemplate(templateName,request,response);
+
+            // 前往正式目标地址
+            response.sendRedirect(request.getContextPath() + "/work?method=showMemorialsDigestList");
+
         } catch (Exception e) {
             //6、判断此处捕获到的异常是否是登录失败异常
             if (e instanceof LoginFailedException) {
