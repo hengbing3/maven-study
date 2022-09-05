@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="pro05-demo-all-in-one" />
+        <module name="maven-study" />
       </profile>
     </annotationProcessing>
   </component>

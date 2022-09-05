@@ -1,4 +1,4 @@
-package com.christer.imperial.court.dao.api;
+package com.christer.imperial.court.service.api;
 
 import com.christer.imperial.court.entity.Memorials;
 
@@ -9,9 +9,8 @@ import java.util.List;
  *
  * @author Christer.Hong
  * @version 1.0
- * @date 2022/09/02
+ * @date 2022/09/05
  */
-public interface MemorialsDao {
-    List<Memorials> selectAllMemorialsDigest();
-
+public interface MemorialsService {
+    List<Memorials> getAllMemorialDigest();
 }

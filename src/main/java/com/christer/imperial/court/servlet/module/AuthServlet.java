@@ -57,4 +57,14 @@ public class AuthServlet extends ModelBaseServlet {
         }
 
     }
+
+    protected void  logout(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // 1、通过 request 对象获取HttpSession 对象
+        HttpSession session = request.getSession();
+        // 2、HttpSession 对象强制失效
+        session.invalidate();
+        // 3、回到首页
+        String templateName = "index";
+        processTemplate(templateName,request,response);
+    }
 }
