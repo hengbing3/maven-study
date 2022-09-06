@@ -8,6 +8,7 @@
     <!--
         物理视图举例：/WEB-INF/pages/index.html
         对应的逻辑视图：index
+        加油冲冲冲！
     -->
     <context-param>
         <param-name>view-prefix</param-name>
