@@ -2,11 +2,17 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="demo-ssm" />
+        <module name="module03-entity" />
+        <module name="module06-generate" />
+        <module name="module04-util" />
+        <module name="module05-environment" />
+        <module name="module01-web" />
+        <module name="module02-component" />
       </profile>
     </annotationProcessing>
   </component>
