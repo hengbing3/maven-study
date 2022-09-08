@@ -38,4 +38,15 @@
 
     <mybatis:scan base-package="com.christer.imperial.court.mapper"/>
 
+    <!--配置事务管理器-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <!-- 装配数据源 -->
+        <property name="dataSource" ref="druidDataSource"/>
+    </bean>
+
+    <!--配置事务的注解驱动，开启基于注解的声明式事务功能-->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <!--配置对 Service 所在的包的自动扫描 -->
+    <context:component-scan base-package="com.christer.imperial.court.service"/>
 </beans>
